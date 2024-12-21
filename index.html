@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Front awasome-->
+   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Responsive Personal Portfolio Website </title>
+    <link rel="stylesheet" href="prot.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"></a>
+             
+    <div id="header">
+        <div class="container">
+            <nav id="sidebar">
+                
+                <ul id="sidemenu">
+                    <li> <a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio"> Portfolio</a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="close-icon"  onclick="closemenu()" ></i> 
+                </ul>
+                <i class="fa-solid fa-bars" id ="menu-icon"   onclick="openmenu()"></i>
+               
+            </nav> 
+        </div>   
+    </div>
+</header>
+ <!-- home section design-->
+ <section class="home" id ="home">
+    <div class="home-content">
+        <h3> Hi, Myself</h3>
+        <h1> Sowmya</h1>
+        <h3> And I'M a <span> FullStack Developer</span></h3>
+        <p>Passionate about bridging technology and user needs, I am a full-stack web developer with a robust foundation in computer science 
+            a zeal for contunuous learning. Specializating in creating seamless, intuitive digital experience, my expertise spans front-end 
+            and back-end Development including technologies like JavaScript, React, and Node.js. I thrive on problem-solving and innovation,
+            aiming to contribute to project that push technologies boundaries. Eagar to collabarate with like-minded teams. I am on a quest 
+            to develop impactful we solutions that drive success and faster growth.</p>
+        <!-- <div class="social-media">
+            <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a> 
+            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>  
+        </div>         
+    <a href="#" class ="btn" > Download CV</a>   -->
+</div> 
+<div class="home-img" id="header">
+    <img src=c:\Users\pilli\Downloads\picture.jpg alt=" picture" class="logo">
+    </div>
+</section>
+
+<!--ABOUT SECTION DESING-->
+<section class="about" id ="about">
+   <div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <div class="about-img">
+                <img src=c:\Users\pilli\Downloads\picture.jpg alt=" picture">
+            </div> 
+        </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p> </p>
+        <div class="tab-links-container">
+            <a href="javascript:void(0);" class="tab-links" onclick="opentab('Skills')">Skills</a>
+            <a href="javascript:void(0);" class="tab-links" onclick="opentab('experience')">Experience</a>
+            <a href="javascript:void(0);" class="tab-links" onclick="opentab('education')">Education</a>
+        </div>
+        
+        <div class="tab-contents active-tab" id="Skills">  <!-- Set Skills to be active by default -->
+            <ul>
+                <li><span>Frontend Development</span><br>Web App Development</li>
+                <li><span>Backend Development</span><br>Manages Data Flow</li>
+                <li><span>Pentester</span><br>Identifies Security Vulnerabilities</li>
+            </ul>
+        </div>
+        
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2024 - current</span><br>Full Stack Web Development Intern at panctech.ai</li>
+                <li><span>March 2024 - September 2024</span><br>VAPT Intern at KIIS Hyderabad</li>
+            </ul>
+        </div>
+        
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2022 - 2024</span><br>M.Sc Cyber Security at Aditya Degree & PG College</li>
+                <li><span>B.Sc Forensics</span><br>R.B.V.R.R Hyderabad</li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </section>
+        <!-- Services section -->
+         <section>
+         <div id="Services">
+            <div class="container">
+                <h1 class="sub-title"> My Services</h1>
+                <div class="services-list">
+                 <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p> I create visually appealing and responsive websites using HTML, CSS, and JavaScript. 
+                        My focus is on delivering intuitive user interfaces and ensuring cross-device compatibility.</p>
+                     <a href="#"> Read More</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>  Full Stack Development</h2>
+                    <p>I develop end-to-end solutions by integrating efficient backend development with modern frontend design. 
+                        My expertise includes working with Node.js, React.js, and database management.</p>
+                     <a href="#"> Read More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2> Cybersecurity </h2>
+                        <p> With a strong foundation in ethical hacking and vulnerability assessment, 
+                            I help identify and mitigate security risks to ensure robust system protection.</p>
+                         <a href="#"> Read More</a>
+                    </div>
+                   
+                </div>
+            </div>
+         </div>
+        </section>
+ <!-- Portfolio -->
+  <section>
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img   src=https://png.pngtree.com/png-vector/20200706/ourmid/pngtree-sun-and-cloud-inside-mobile-phone-showing-mobile-weather-app-png-image_2302202.jpg 
+                                alt = "1" style= "height: 300px; width: 300px" class="image">
+                    <div class="layer">
+                        <h3> Whether App</h3>
+                        <p> A responsive web application that provides real-time weather updates for any location. Using the OpenWeatherMap API, 
+                            this app displays key weather details like temperature, humidity, pressure, and cloud coverage. Users can search for a city, 
+                            view current weather conditions, and see corresponding weather icons. The app features a clean and intuitive interface, making
+                            it easy to access weather information on any device.</p>
+                             <a href="https://github.com/sowmya-pilli/whether_app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src =https://www.pngplay.com/wp-content/uploads/6/E-Commerce-Logo-PNG-Clipart-Background.png
+                     style= "height: 300px; width: 300px" class="image">
+                    <div class="layer">
+                        <h3> E-Commerce Website</h3>
+                             <p>
+                             This is a fully responsive e-commerce website that I developed using HTML, CSS, and JavaScript. 
+                            The project showcases my skills in creating modern, user-friendly websites with a focus on functionality and design. 
+                            The site features a variety of sections, including product displays, best-sellers, latest news, and a contact form, all
+                             optimized for a smooth user experience across devices.</p>
+                             <a href="https://github.com/sowmya-pilli/E-Commerce"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img  src=  https://www.pngplay.com/wp-content/uploads/6/E-Commerce-Logo-Transparent-File.png style= "height: 300px; width: 300px" class="image">
+                    
+                    <div class="layer">
+                        <h3>  Amazon Online Shopping App clone</h3>
+                        <p> Developed a static replica of Amazon's homepage using HTML and CSS, showcasing a clean and responsive design. Features include a
+                             navigation bar, product grid layout, and a footer with quick links. The project highlights my skills in frontend design and structuring
+                              user-friendly, responsive web pages.</p>
+                             <a href="https://github.com/sowmya-pilli/Amazon"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            
+            </div>
+            <a href="https://github.com/sowmya-pilli" class="btn-see"> See More</a>
+        </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+
+  <section>
+    <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>pillisoumya26@gmail.com</p>
+                <div class="social-media">
+            <a href="mailto:pillisoumya26@gmail.com"> <i class="fa-solid fa-envelope"></i></i></a>
+            <a href="https://github.com/sowmya-pilli"> <i class="fa-brands fa-github"></i></a> 
+            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>  
+        </div>         
+             <a href="#" class ="btn" > Download CV</a>  
+            </div>
+            <div class="contact-right">
+
+                <form name="pillisoumya26@gmail.com">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your  Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type=" submit" class="btn"> submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="copyright">
+        <p>coptright @ Sowmya .Made with with <i class="fa-regular fa-heart"></i></p>
+    </div>
+  </footer>
+  <script src="prot.js"></script>
+
+</body>
+</html>
